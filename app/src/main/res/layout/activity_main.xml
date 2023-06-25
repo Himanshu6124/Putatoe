@@ -58,7 +58,6 @@
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@id/tv_available"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/rupee_icon"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -102,12 +101,12 @@
                 android:id="@+id/remaining_point"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:text="500"
                 android:textColor="@color/white"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@id/tv_reward_point"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/reward_icon"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -231,7 +230,7 @@
             <TextView
                 android:id="@+id/string3"
                 android:layout_width="wrap_content"
-                android:text="@string/string1"
+                android:text="@string/string3"
                 android:textStyle="bold"
                 android:textSize="12sp"
                 android:textColor="@color/white"
@@ -262,10 +261,11 @@
 
                 <ImageView
                     android:id="@+id/wallet_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/wallet"
                     app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
                 <TextView
@@ -295,12 +295,13 @@
 
                 <ImageView
                     android:id="@+id/redeem_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/redeem"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -329,11 +330,12 @@
 
                 <ImageView
                     android:id="@+id/bank_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/bank"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
                 <TextView
                     android:layout_width="wrap_content"
